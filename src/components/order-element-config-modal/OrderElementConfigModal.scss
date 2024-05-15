@@ -1,0 +1,102 @@
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  //padding: 50px;
+  width: 100%;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 300;
+
+  display: flex;
+  max-width: 430px;
+
+  width: 75vw;
+  padding: 24px;
+  flex-shrink: 0;
+
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.03),
+    0px 20px 24px -4px rgba(16, 24, 40, 0.08);
+
+  .close {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+
+  .dish-name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+
+    h3 {
+      width: fit-content;
+      margin-top: 0px;
+      color: #000;
+      font-family: Karla;
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 0px;
+    }
+    p {
+      color: #000;
+      font-family: Karla;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+  .add-dish {
+    display: flex;
+    flex-direction: row;
+    gap: 58px;
+    justify-content: center;
+    margin-bottom: 35px;
+    cursor: pointer;
+    .number-change {
+    }
+    .number {
+      color: #000;
+      font-family: Karla;
+      font-size: 36px;
+      font-weight: 400;
+    }
+  }
+  .add-button {
+    padding: 16px;
+    border-radius: 20px;
+    width: 100%;
+    background: #f4ce14;
+    color: #333;
+    border: none;
+
+    text-align: center;
+    font-family: Karla;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+  }
+}
+.modal-background {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 200;
+
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(119, 119, 119, 0.6);
+
+  backdrop-filter: blur(3px);
+}

@@ -1,0 +1,102 @@
+.hero-container {
+  //flex-shrink: 1;
+  background: hsl(160, 13%, 33%);
+  margin-top: 30px;
+  margin-bottom: 150px;
+
+  .horizontal {
+    gap: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 640px) {
+      .hero-content-left {
+        align-items: center;
+      }
+    }
+    .hero-content-left {
+      flex: 1;
+      margin-bottom: 28px;
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        white-space: nowrap;
+        color: #f4ce14;
+        font-family: "Markazi Text";
+        font-size: 56px;
+        margin-bottom: 14px;
+      }
+      .subtitle {
+        margin: 0px;
+        color: #edefee;
+        font-family: "Markazi Text";
+        font-size: 32px;
+      }
+      @media (max-width: 640px) {
+        p {
+          text-align: center;
+        }
+      }
+      main {
+        margin-bottom: 36px;
+
+        p {
+          width: 100%;
+          color: #edefee;
+          font-family: "Karla";
+          font-size: 20px;
+          line-height: 140.625%;
+        }
+      }
+      button {
+        margin-bottom: 28px;
+        border: none;
+        background-color: #f4ce14;
+        width: 50%;
+        padding: 17px;
+        border-radius: 20px;
+        color: #333;
+
+        font-family: "Karla";
+        font-size: 18px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+    @media (max-width: 640px) {
+      .hero-content-right {
+        display: none;
+      }
+    }
+    .hero-content-right {
+      flex: 1;
+      position: relative;
+
+      @media (max-width: 640px) {
+        img {
+          display: none;
+        }
+      }
+
+      img {
+        flex: 0;
+        object-fit: cover;
+        position: absolute;
+        top: 30px;
+        //left: 0px;
+        right: 0px;
+        margin-top: 30px;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-container {
+    margin-bottom: 50px;
+  }
+}
